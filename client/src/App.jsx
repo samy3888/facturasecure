@@ -5,6 +5,7 @@ import { useState, useEffect } from 'react';
 
 // Pages
 import Login from './pages/Login';
+import Admin from './pages/Admin';
 import Register from './pages/Register';
 import Dashboard from './pages/Dashboard';
 import Factures from './pages/Factures';
@@ -54,6 +55,7 @@ theme="dark"
 <Route path="/register" element={<Register />} />
 
 {/* Pages protégées */}
+<Route path="/admin" element={<Admin />} />
 <Route path="/dashboard" element={
 <RouteProtegee>
 <Dashboard utilisateur={utilisateur} />

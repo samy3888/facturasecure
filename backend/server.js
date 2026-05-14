@@ -50,6 +50,7 @@ const utilisateurRoutes = require('./routes/utilisateurs');
 const dashboardRoutes = require('./routes/dashboard');
 
 app.use('/api/auth', authRoutes);
+app.use('/api/admin', require('./routes/admin'));
 app.use('/api/etablissements', etablissementRoutes);
 app.use('/api/fournisseurs', fournisseurRoutes);
 app.use('/api/factures', factureRoutes);
