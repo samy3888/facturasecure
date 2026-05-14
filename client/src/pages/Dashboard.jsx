@@ -109,6 +109,9 @@ Déconnexion
 <div style={{ marginBottom: '24px' }}>
 <h1 style={{ color: '#ffffff', fontSize: '22px', fontWeight: '700', margin: '0' }}>
 Bonjour {utilisateur?.prenom} 👋
+<button onClick={() => window.location.href = '/admin'} style={{ background: '#00B4D8', color: 'white', padding: '10px 20px', borderRadius: 8, border: 'none', cursor: 'pointer', marginTop: 10 }}>
+👑 Panel Admin
+</button>
 <h1 style={{ color: '#ffffff', fontSize: '22px', fontWeight: '700', margin: '0' }}>
 
 </h1>
