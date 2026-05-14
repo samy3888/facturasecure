@@ -109,6 +109,15 @@ Déconnexion
 <div style={{ marginBottom: '24px' }}>
 <h1 style={{ color: '#ffffff', fontSize: '22px', fontWeight: '700', margin: '0' }}>
 Bonjour {utilisateur?.prenom} 👋
+{utilisateur?.email === 'samy@test.fr' && (
+<button
+onClick={() => window.location.href = '/admin'}
+style={{ background: '#00B4D8', color: 'white', padding: '10px 20px', borderRadius: 8, border: 'none', cursor: 'pointer', marginBottom: 20 }}
+>
+👑 Panel Admin
+</button>
+)}
+
 </h1>
 <p style={{ color: '#6b7280', fontSize: '14px', marginTop: '4px' }}>
 Voici le résumé de votre activité
