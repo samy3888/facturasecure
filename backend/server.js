@@ -12,7 +12,7 @@ const app = express();
 // MIDDLEWARE
 // ============================================
 app.use(cors({
-origin: ['https://facturasecure.netlify.app', 'http://localhost:3000'],
+origin: ['https://facturasecure.netlify.app', 'https://facturasecure.fr', 'https://www.facturasecure.fr', 'http://localhost:3000'],
 credentials: true
 }));
 app.use(express.json({ limit: '50mb' }));
